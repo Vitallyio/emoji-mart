@@ -1103,6 +1103,7 @@ export default class Picker extends Component {
       <section
         id="root"
         class="flex flex-column"
+        part="root"
         data-emoji-set={this.props.set}
         data-theme={this.state.theme}
         data-menu={this.state.showSkins ? '' : undefined}
