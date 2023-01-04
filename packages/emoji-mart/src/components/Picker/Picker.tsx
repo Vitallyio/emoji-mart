@@ -821,7 +821,7 @@ export default class Picker extends Component {
         <div class="flex flex-middle">
           {renderSkinTone && this.dir == 'rtl' && this.renderSkinToneButton()}
 
-          <div class="search relative flex-grow">
+          <div class="search relative flex-grow" part="searchInputContainer">
             <input
               type="search"
               ref={this.refs.searchInput}
@@ -830,6 +830,7 @@ export default class Picker extends Component {
               onInput={this.handleSearchInput}
               onKeyDown={this.handleSearchKeyDown}
               autoComplete="off"
+              part="searchInput"
             ></input>
             <span class="icon loupe flex">{Icons.search.loupe}</span>
             {this.state.searchResults && (
