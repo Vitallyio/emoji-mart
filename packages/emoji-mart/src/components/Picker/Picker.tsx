@@ -859,7 +859,7 @@ export default class Picker extends Component {
 
     return (
       <div class="category" ref={this.refs.search}>
-        <div class={`sticky padding-small align-${this.dir[0]}`}>
+        <div class={`sticky padding-small align-${this.dir[0]}`} part="searchHeader">
           {I18n.categories.search}
         </div>
         <div>
@@ -911,7 +911,7 @@ export default class Picker extends Component {
               class="category"
               ref={root}
             >
-              <div class={`sticky padding-small align-${this.dir[0]}`}>
+              <div class={`sticky padding-small align-${this.dir[0]}`} part="categoryHeader">
                 {category.name || I18n.categories[category.id]}
               </div>
               <div
