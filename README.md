@@ -1,3 +1,21 @@
+
+A fork of the emoji-mart component that adds addtional styling options:
+```css
+em-emoji-picker::part(searchInput) {
+  /* customize the search input */
+}
+
+em-emoji-picker::part(searchInputContainer) {
+  /* customize the search container */
+}
+em-emoji-picker::part(categoryHeader) {
+  /* customize the category header text */
+}
+&::part(searchHeader) {
+ /* customize the searching header text */
+}
+```
+
 <div align="center">
   <br><b>Emoji Mart</b> is a customizable<br>emoji picker HTML component for the web
   <br><a href="https://missiveapp.com/open/emoji-mart">Demo</a>
